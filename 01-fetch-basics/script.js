@@ -8,6 +8,6 @@ fetch("./test.txt")
   .then((response) => response.text())
   .then((data) => console.log(data))
 
-fetch("https://api.github.com/users")
+fetch("https://api.github.com/users/hlxuan")
   .then((response) => response.json())
   .then((data) => console.log(data))
