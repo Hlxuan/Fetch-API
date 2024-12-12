@@ -1,4 +1,4 @@
-function featchUser() {
+function fetchUser() {
   showSpinner()
   fetch("https://randomuser.me/api/")
     .then((res) => res.json())
@@ -39,3 +39,5 @@ function showSpinner() {
 function hideSpinner() {
   document.querySelector(".spinner").style.display = "none"
 }
+
+document.querySelector("#generate").addEventListener("click", fetchUser)
