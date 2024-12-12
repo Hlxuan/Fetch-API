@@ -11,3 +11,7 @@ fetch("./test.txt")
 fetch("https://api.github.com/users/hlxuan")
   .then((response) => response.json())
   .then((data) => console.log(data))
+
+fetch("https://api.github.com/users/hlxuan/repos")
+  .then((response) => response.json())
+  .then((data) => console.log(data))
