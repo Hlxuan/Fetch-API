@@ -21,3 +21,7 @@ fetch("https://api.github.com/users/hlxuan")
   .then((data) => {
     document.querySelector("h1").textContent = data.login
   })
+
+axios.get("./movies.json").then((response) => {
+  console.log(response.data)
+})
