@@ -32,3 +32,10 @@ function displayUser(user) {
         </div>
     `
 }
+
+function showSpinner() {
+  document.querySelector(".spinner").style.display = "block"
+}
+function hideSpinner() {
+  document.querySelector(".spinner").style.display = "none"
+}
